@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<style>
+    /*
+    *https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+    *https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex
+    */
+     .container {
+         display: flex;
+            
+     }
+
+    .a {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+
+    }
+
+    .b {
+        background-color: green;
+        flex:auto;
+        flex-direction: row;
+        flex-basis: 5%;/*最小5%*/
+        flex-flow: column;
+    }
+    .c {
+        background-color: blue;
+        width: 80px;
+    }
+</style>
+    <div class="container">
+        <div class="a">aaa</div><span class="b">bbb</span><span class="c">cccc</span>
+    </div>
+</body>
+</html>

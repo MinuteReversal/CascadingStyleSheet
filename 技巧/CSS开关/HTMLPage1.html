@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        .opr a {
+            border-color: #f24d4d;
+            color: #fff;
+            background-color: #f24d4d;
+            display: inline-block;
+            overflow: visible;
+            padding: 0 22px;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .opr #enabled + .btnEnabled {
+            border-color: #44b449;
+            border-color: rgba(68, 180, 73, 1);
+            color: #fff;
+            background-color: #44b449;
+            background-color: rgba(68, 180, 73, 1);
+            display: inline-block;
+            overflow: visible;
+            padding: 0 22px;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+            .opr #enabled + .btnEnabled:before {
+                content: "启用";
+            }
+
+        .opr #enabled:checked + .btnEnabled {
+            border-color: #f24d4d;
+            color: #fff;
+            background-color: #f24d4d;
+            display: inline-block;
+            overflow: visible;
+            padding: 0 22px;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+            .opr #enabled:checked + .btnEnabled:before {
+                content: "停用";
+            }
+    </style>
+    <div class="opr">
+        <input id="enabled" type="checkbox" />
+        <label class="btnEnabled" for="enabled" href="javascript:;"></label>
+    </div>
+</body>
+</html>

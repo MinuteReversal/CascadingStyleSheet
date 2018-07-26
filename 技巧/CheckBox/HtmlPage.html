@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        input[type="radio"] {
+            display: none;
+        }
+
+        input + label {
+            background-image: url(Images/Uncheck.svg);
+            -ms-background-size: 100% 100%;
+            background-size: 100% 100%;
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+
+        input:checked + label {
+            background-image: url(Images/Checked.svg);
+        }
+    </style>
+</head>
+<body>
+    <input id="a" type="radio" name="type" value="AAA" /><label for="a"></label><label for="a">AAA</label>
+    <input id="b" type="radio" name="type" value="BBB" /><label for="b"></label><label for="b">BBB</label>
+    <input id="c" type="radio" name="type" value="CCC" /><label for="c"></label><label for="c">CCC</label>
+    <input id="d" type="radio" name="type" value="DDD" /><label for="d"></label><label for="d">DDD</label>
+</body>
+</html>

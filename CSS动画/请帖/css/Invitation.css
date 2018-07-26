@@ -1,0 +1,231 @@
+/*  
+*@Description: ÇëÌû
+*@Author:      digpads  
+*@Update:      digpads(2014-09-13 10:00)
+*/
+
+body {
+    font-family: Microsoft Yahei;
+    background: url(../images/bgs.png);
+}
+
+.area-1th {
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+    background: #f3f3f0;
+    overflow: hidden;
+}
+
+.clickTo {
+    text-align: center;
+    bottom: 4%;
+    left: 5rem;
+}
+
+    .clickTo img {
+        width: 4rem;
+        animation: goto 2s infinite;
+    }
+
+@keyframes goto {
+    0% {
+        transform: translate(0,0);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0,0);
+        opacity: 0;
+    }
+}
+
+.topImg {
+    position: relative;
+    text-align: center;
+}
+
+#cavbox {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
+
+    #cavbox em {
+        position: absolute;
+        display: block;
+        font: 700 2rem/2rem Microsoft Yahei;
+        color: #fff;
+        text-shadow: 1px 2px 3px #b32a2a;
+    }
+
+        #cavbox em.wd1 {
+            left: 10rem;
+            top: 1rem;
+            font-size: 4.5rem;
+            animation: grow 0.7s 0.5s 1 ease;
+        }
+
+        #cavbox em.wd2 {
+            left: 14rem;
+            top: 2rem;
+            font-size: 4rem;
+            animation: grow 0.7s 0.8s 1 ease;
+        }
+
+        #cavbox em.wd3 {
+            left: 8rem;
+            top: 5rem;
+            font-size: 4rem;
+            animation: grow 0.7s 1.1s 1 ease;
+        }
+
+        #cavbox em.wd4 {
+            left: 11.5rem;
+            top: 7rem;
+            font-size: 5.5rem;
+            animation: grow 0.7s 1.4s 1 ease;
+        }
+
+        #cavbox em.wd5 {
+            left: 16.8rem;
+            top: 5.5rem;
+            font-size: 3rem;
+            animation: grow 0.7s 1.7s 1 ease;
+        }
+
+        #cavbox em.wd6 {
+            left: 5rem;
+            top: 8rem;
+            font-size: 1.5rem;
+            font-family: arial;
+            animation: grow 0.7s 2s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;
+        }
+
+        #cavbox em.wd7 {
+            left: 6rem;
+            top: 9.5rem;
+            font-size: 1.5rem;
+            font-family: arial;
+            animation: grow 0.7s 2s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;
+        }
+
+/*	
+				#cavbox em.wd1 {left:10rem;top:1rem;font-size:4.5rem;transform:rotate(9deg);animation:grow 0.7s 0.4s 1 ease;}
+				#cavbox em.wd2 {left:14rem;top:2rem;font-size:4rem;transform:rotate(-5deg);animation:grow 0.7s 0.4s 1 ease}
+				#cavbox em.wd3 {left:8rem;top:5rem;font-size:4rem;transform:rotate(9deg);animation:grow 0.7s 0.4s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;}
+				#cavbox em.wd4 {left:11.5rem;top:7rem;font-size:5.5rem;transform:rotate(-5deg);animation:grow 0.7s 0.4s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;}
+				#cavbox em.wd5 {left:16.8rem;top:5.5rem;font-size:3rem;transform:rotate(-10deg);animation:grow 0.7s 0.4s 1 ease;}
+				#cavbox em.wd6 {left:5rem;top:8rem;font-size:1.5rem;transform:rotate(9deg);font-family:arial;animation:grow 0.7s 0.4s 1 ease;}
+				#cavbox em.wd7 {left:6rem;top:9.5rem;font-size:1.5rem;transform:rotate(9deg);font-family:arial;animation:grow 0.7s 0.4s 1 ease;}
+				
+				from {background:red;}
+				to {background:yellow;}
+				
+			*/
+
+
+@keyframes note-anim {
+    0% {
+        opacity: 0;
+        transform: translate(0px,50px);
+        transform: translate(0px,50px);
+    }
+
+    30% {
+        transform: rotate(12deg) translate(-30px,0px);
+        transform: rotate(12deg) translate(-30px,0px);
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    60% {
+        transform: rotate(-12deg) translate(30px,-100px);
+        transform: rotate(-12deg) translate(30px,-100px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(0deg) translate(0px,-200px);
+        transform: rotate(0deg) translate(0px,-200px);
+    }
+}
+
+
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.15);
+    }
+
+    80% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes music-move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(-5deg);
+    }
+
+    66% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+.topImg img {
+    width: 100%;
+}
+
+.love {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+    .love img {
+        width: 35%;
+        animation: myfirst 1s infinite;
+    }
+
+@keyframes myfirst {
+    0% {
+        transform: scale(0.8);
+    }
+
+    40% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}

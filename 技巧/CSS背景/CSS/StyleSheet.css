@@ -1,0 +1,29 @@
+﻿body {
+}
+
+.buttom1 {
+    display: block;
+    background-image: url(../Images/bg.png);
+    background-position: -22px -250px;      /*背景偏移值（-x -y 可以在PhotoShop F8键中找到）*/
+    background-repeat: no-repeat;           /*背景不重复*/
+    width: 155px;                           /*元素宽度*/
+    height: 53px;                           /*元素高度*/
+}
+
+.buttom2 {
+    display: block;
+    background-image: url(../Images/bg.png);
+    background-position: -22px -364px;      /*背景偏移值（-x -y 可以在PhotoShop F8键中找到）*/
+    background-repeat: no-repeat;           /*背景不重复*/
+    width: 155px;                           /*元素宽度*/
+    height: 53px;                           /*元素高度*/
+}
+
+.buttom3 {
+    display: block;
+    background-image: url(../Images/bg.png);
+    background-position: -24px -443px;      /*背景偏移值（-x -y 可以在PhotoShop F8键中找到）*/
+    background-repeat: no-repeat;           /*背景不重复*/
+    width: 155px;                           /*元素宽度*/
+    height: 53px;                           /*元素高度*/
+}

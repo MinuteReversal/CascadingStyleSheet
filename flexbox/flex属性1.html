@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .a {
+            flex-shrink: 0;
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .b {
+            background-color: green;
+            flex:auto;
+        }
+        .c {
+            background-color: blue;
+            flex-shrink: 0;
+            width: 80px;
+        }
+    </style>
+    <div class="container">
+        <div class="a">aaa</div><span class="b">bbb</span><span class="c">cccc</span>
+    </div>
+</body>
+</html>
