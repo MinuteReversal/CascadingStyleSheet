@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="scroll">
+        <div class="main">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <style>
+        .scroll {
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        .main {
+            display: inline;
+            white-space: nowrap;
+        }
+
+        .main div {
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            background-color: rebeccapurple;
+            margin: 10px;
+        }
+    </style>
+</body>
+
+</html>
