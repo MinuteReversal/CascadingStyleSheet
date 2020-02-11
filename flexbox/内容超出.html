@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="col-1">固定宽度</div>
+      <div class="col-2">固定宽度</div>
+      <div class="col-3">
+        有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容有很多内容
+      </div>
+    </div>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background-color: yellow;
+        height: 200px;
+      }
+      .col-1 {
+        flex: none;
+        width: 80px;
+        background-color: red;
+      }
+      .col-2 {
+        flex: none;
+        width: 40px;
+        background-color: green;
+      }
+      .col-3 {
+        flex-shrink: 1;
+        color: white;
+        background-color: blue;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    </style>
+  </body>
+</html>
