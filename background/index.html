@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dialog"></div>
+    <style>
+      html,
+      body {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+      }
+      body {
+        background: radial-gradient(ellipse at center, #d0272d, #40030d);
+      }
+
+      .dialog {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        left: 20px;
+        bottom: 20px;
+        display: block;
+        background-image: url("top-left.png"), url("top.png"),
+          url("top-right.png"), url("right.png"), url("bottom-right.png"),
+          url("bottom.png"), url("bottom-left.png"), url("left.png"),
+          linear-gradient(#a52c2d, #a52c2d);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+          no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: left top, left 24px top, right top, right,
+          right bottom, left 24px bottom, left bottom, left, left 24px top 24px;
+        background-size: 24px 24px, calc(100% - 48px) 24px, 24px 24px,
+          24px calc(100% - 48px), 24px 24px, calc(100% - 48px) 24px, 24px 24px,
+          24px calc(100% - 48px), calc(100% - 48px) calc(100% - 48px);
+      }
+    </style>
+  </body>
+</html>
