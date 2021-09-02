@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>CSS3实现卡片翻转效果</title>
+    <style>
+      .re-item {
+        width: 220px;
+        margin: 50px auto;
+        cursor: pointer;
+        position: relative;
+        perspective: 500;
+        -webkit-perspective: 500;
+      }
+
+      .re-item img {
+        width: 220px;
+      }
+
+      .re-item-front,
+      .re-item-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        perspective: 1000;
+        -webkit-perspective: 1000;
+        backface-visibility: hidden;
+        -webkit-transition: all 1.5s;
+        -moz-transition: all 1.5s;
+        -ms-transition: all 1.5s;
+        -o-transition: all 1.5s;
+        transition: all 1.5s;
+        overflow: hidden;
+      }
+
+      .re-item-back {
+        position: relative;
+        transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+      }
+
+      .re-item:hover .re-item-front {
+        transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+      }
+
+      .re-item:hover .re-item-back {
+        transform: rotateY(-360deg);
+        -webkit-transform: rotateY(-360deg);
+      }
+
+      .re-box .re-item dd {
+        text-align: center;
+        font-family: "微软雅黑";
+      }
+
+      .re-item .re-item-job {
+        margin: 2px 0;
+        font-size: 18px;
+        color: #303030;
+        line-height: 40px;
+      }
+
+      .re-item .re-item-des {
+        padding: 0 12px;
+        font-size: 14px;
+        color: #939393;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="re-box">
+      <div class="re-item">
+        <div class="re-item-front">
+          <img src="front.png" alt="coser" />
+        </div>
+        <div class="re-item-back">
+          <img src="back.svg" alt="苏苏" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
