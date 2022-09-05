@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      //https://github.com/Microsoft/vscode-chrome-debug
+      "name": "Launch Chrome(local)",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${file}"
+    },
+    {
+      "name": "Launch Chrome(network)",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://192.168.31.171/js/${relativeFile}",
+      "webRoot": "${cwd}"
+    },
+    {
+      "type": "mock",
+      "request": "launch",
+      "name": "Debug(.md file)",
+      "program": "${workspaceFolder}/${relativeFile}",
+      "stopOnEntry": true
+    }
+  ]
+}
